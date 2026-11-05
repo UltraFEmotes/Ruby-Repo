@@ -1,6 +1,6 @@
 # Ruby's Built-in Repository
 
-A fan-made package repository by WeirdMM for Ruby, the package manager for [WinterX](https://github.com/UltraFEmotes/WinterX). Published experimental packages: **Animaper and ColoredBar**.
+A fan-made package repository by WeirdMM for Ruby, the package manager for [WinterX](https://github.com/UltraFEmotes/WinterX). Published experimental packages: **Animaper, ColoredBar and SnowyHome**.
 
 ## Add to Ruby
 
@@ -20,7 +20,13 @@ Choose presets or any six-digit RGB hex colour in **Spring Settings → ColoredB
 
 Basic ColoredBar behaviour was live-confirmed on Mac.APK. New coverage/branding fixes passed isolated packaged-engine checks but still need a live trial. Build the updated WinterX engine and fully reopen Spring: the `.springys` archive selects a compiled hook, not an engine upgrade. Exclusions and recovery remain experimental.
 
-FreeMe, DockIn, SnowyHome and SSH are unfinished. Developer examples and the old test tweaks are deliberately excluded from this index.
+## SnowyHome 0.2.1
+
+Icon packs, badge colours, icon corners and hidden icon labels, set in **Spring Settings → WINTERX TWEAKS → SnowyHome**. New in 0.2.1: when icon labels are hidden, Home icons move down to sit centred in their cells (dock icons stay put).
+
+SnowyHome 0.2.1 is a source-backed Java/Dex code package (`winterx.springys/3`). It needs the new modular WinterX core with native packages, which hasn't been published yet; older engines list it but can't install it. Its full source is in `sources/snowyhome/`.
+
+FreeMe, DockIn and SSH are unfinished here. Developer examples and the old test tweaks are deliberately excluded from this index.
 
 ## Building packages
 

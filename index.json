@@ -9,6 +9,10 @@
     {
       "url": "packages/coloredbar.springys",
       "sha256": "2b320bb843b71f49be5d1648a3798e88f57e7704151d1d8634b12727ba0f040c"
+    },
+    {
+      "url": "packages/snowyhome-0.2.1.springys",
+      "sha256": "31a13899e35549ff1808c6b2ebca8c79dc1ee29499587b70e6e74205a6fff6f7"
     }
   ]
 }
