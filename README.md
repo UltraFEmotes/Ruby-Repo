@@ -1,6 +1,6 @@
 # Ruby's Built-in Repository
 
-A fan-made package repository by WeirdMM for Ruby, the package manager for [WinterX](https://github.com/UltraFEmotes/WinterX). Published experimental packages: **Animaper, ColoredBar and SnowyHome**.
+A fan-made package repository by WeirdMM for Ruby, the package manager for [WinterX](https://github.com/UltraFEmotes/WinterX). Published packages (source-backed Java/Dex, version 0.2.x): **Animaper, ColoredBar, DockIn, FreeMe, Message+, SnowyHome and SSH**. They need the modular WinterX core; see the [WinterX repository](https://github.com/UltraFEmotes/WinterX).
 
 ## Add to Ruby
 
