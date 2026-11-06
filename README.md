@@ -12,19 +12,21 @@ The hosted and built-in sources contain the same packages, so adding both may sh
 
 ## Packages
 
+Every package supports **Spring 0.8.1** and **Spring 0.9 Preview 1**; Ruby shows the versions each one supports and only installs it on those.
+
 | Package | Version | What it does |
 | --- | --- | --- |
-| Animaper | 0.2.0 | Eight Home page-swipe effects. |
-| ColoredBar | 0.2.0 | Recolours app navigation bars (presets or any hex colour), with per-app exclusions. Ruby always stays red. |
-| DockIn | 0.2.0 | Choose four to seven dock icons. |
-| FreeMe | 0.2.0 | Keep gaps in the Home grid, move icons across pages and keep native folders. |
-| Message+ | 0.2.0 | Settings inside Messages and JPEG photo-quality choices. Video sending and reactions are unfinished. |
-| SnowyHome | 0.2.1 | Icon packs, badge colours, icon corners and hidden icon labels. When labels are hidden, Home icons move down to sit centred in their cells. |
-| SSH | 0.2.0 | An SSH server for Spring. It stays stopped until you start it in its Settings page with a configured key. |
-| **Gravity** | 0.1.0 | Shake the phone and the Home icons fall as solid tiles. They tumble, pile up the way the phone is tilted and land on the dock. Grab and throw them, swipe to other pages (each page falls when you reach it), and tap a loose icon to open its app. Shake again or press Home and they float back into place. Labels hide while icons are loose. |
-| **Harlem Shake** | 0.1.2 | A remake of the 2013 meme tweak. Tap Do the Harlem Shake in its Settings page and Settings closes to Home: one icon dances alone, then at the drop every icon joins in with a random move until the song ends. The song isn't included. Tap the song row to pick an audio file of your own with the system file picker (a real macOS dialog on Mac.APK), or it dances in silence. |
-| **Android Keyboard** | 0.1.0 | Type into any text field with your real keyboard (on Mac.APK, or a keyboard connected to your phone), with Backspace, Return and ⌘V / Ctrl+V paste, and hide the iOS keyboard so apps get the whole screen. On a phone, turn on **Use the Android keyboard** to get your own keyboard (with suggestions) instead; that option is new and less tested. Pop-up boxes with a text field still use the iOS keyboard. |
-| **LegacyBooter** | 0.1.0 | Adds an **iPhone OS 1** app to Spring: the original iPhone running iPhone OS 1.0, with its own round Home button, drawn inside Spring's screen (frame or frameless). Spring's Home closes it and each launch starts fresh. It runs [kelindi's iphone-1-emulator](https://github.com/kelindi/iphone-1-emulator) (GPL-2.0-or-later) in a WebView. Nothing of the emulator or of Apple's firmware is included: on first launch the emulator is downloaded from 2007.mobile (each file checked against a pinned hash) and it fetches iPhone OS 1.0 (about 190 MB, hash-checked) from the emulator project's own host. Needs a few GB of free memory; works on Mac.APK and on Android. |
+| Animaper | 0.2.1 | Eight Home page-swipe effects. |
+| ColoredBar | 0.2.1 | Recolours app navigation bars (presets or any hex colour), with per-app exclusions. Ruby always stays red. |
+| DockIn | 0.2.2 | Choose four to seven dock icons. |
+| FreeMe | 0.2.1 | Keep gaps in the Home grid, move icons across pages and keep native folders. |
+| Message+ | 0.2.1 | Settings inside Messages and JPEG photo-quality choices. Video sending and reactions are unfinished. |
+| SnowyHome | 0.2.2 | Icon packs, badge colours, icon corners and hidden icon labels. When labels are hidden, Home icons move down to sit centred in their cells. |
+| SSH | 0.2.1 | An SSH server for Spring. It stays stopped until you start it in its Settings page with a configured key. |
+| **Gravity** | 0.1.1 | Shake the phone and the Home icons fall as solid tiles. They tumble, pile up the way the phone is tilted and land on the dock. Grab and throw them, swipe to other pages (each page falls when you reach it), and tap a loose icon to open its app. Shake again or press Home and they float back into place. Labels hide while icons are loose. |
+| **Harlem Shake** | 0.1.3 | A remake of the 2013 meme tweak. Tap Do the Harlem Shake in its Settings page and Settings closes to Home: one icon dances alone, then at the drop every icon joins in with a random move until the song ends. The song isn't included. Tap the song row to pick an audio file of your own with the system file picker (a real macOS dialog on Mac.APK), or it dances in silence. |
+| **Android Keyboard** | 0.1.1 | Type into any text field with your real keyboard (on Mac.APK, or a keyboard connected to your phone), with Backspace, Return and ⌘V / Ctrl+V paste, and hide the iOS keyboard so apps get the whole screen. On a phone, turn on **Use the Android keyboard** to get your own keyboard (with suggestions) instead; that option is new and less tested. Pop-up boxes with a text field still use the iOS keyboard. |
+| **LegacyBooter** | 0.1.1 | Adds an **iPhone OS 1** app to Spring: the original iPhone running iPhone OS 1.0, with its own round Home button, drawn inside Spring's screen (frame or frameless). Spring's Home closes it and each launch starts fresh. It runs [kelindi's iphone-1-emulator](https://github.com/kelindi/iphone-1-emulator) (GPL-2.0-or-later) in a WebView. Nothing of the emulator or of Apple's firmware is included: on first launch the emulator is downloaded from 2007.mobile (each file checked against a pinned hash) and it fetches iPhone OS 1.0 (about 190 MB, hash-checked) from the emulator project's own host. Needs a few GB of free memory; works on Mac.APK and on Android. |
 
 The full source of each package is in `sources/<name>/`.
 
@@ -34,8 +36,10 @@ From a WinterX checkout with a built core (see [making tweaks](https://github.co
 
 ```sh
 python3 extensions/build.py package /path/to/Ruby-Repo/sources/gravity /tmp/gravity.springys \
-  --sdk out/core/winterx-native-api.jar --spring-api out/core/spring-api.jar
+  --sdk out/core/winterx-native-api.jar --spring-api out/core/spring-api.jar --version-core out/core-0.9
 ```
+
+`--version-core` adds code for another Spring version from that version's built core (here 0.9 Preview 1); list the versions in the manifest's `spring` field.
 
 The archive hash in `index.json` must match the published file. See the [repository guide](https://github.com/UltraFEmotes/WinterX/blob/main/docs/repository-design.md) for the index format.
 
