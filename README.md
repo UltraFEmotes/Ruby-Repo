@@ -22,7 +22,7 @@ The hosted and built-in sources contain the same packages, so adding both may sh
 | SnowyHome | 0.2.1 | Icon packs, badge colours, icon corners and hidden icon labels. When labels are hidden, Home icons move down to sit centred in their cells. |
 | SSH | 0.2.0 | An SSH server for Spring. It stays stopped until you start it in its Settings page with a configured key. |
 | **Gravity** | 0.1.0 | Shake the phone and the Home icons fall as solid tiles. They tumble, pile up the way the phone is tilted and land on the dock. Grab and throw them, swipe to other pages (each page falls when you reach it), and tap a loose icon to open its app. Shake again or press Home and they float back into place. Labels hide while icons are loose. |
-| **Harlem Shake** | 0.1.0 | A remake of the 2013 meme tweak. Start it from its Settings page: one icon dances alone, then at the drop every icon joins in with a random move until the song ends. The song isn't included. Put an MP3 of your own in the folder its Settings page names and tap Import, or it dances in silence. |
+| **Harlem Shake** | 0.1.1 | A remake of the 2013 meme tweak. Tap Do the Harlem Shake in its Settings page and Settings closes to Home: one icon dances alone, then at the drop every icon joins in with a random move until the song ends. The song isn't included. Put an MP3 of your own in `Android/data/com.guille.spring/files/harlemshake` and tap the song row, or it dances in silence. |
 
 The full source of each package is in `sources/<name>/`.
 
