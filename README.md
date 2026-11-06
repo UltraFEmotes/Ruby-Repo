@@ -23,6 +23,7 @@ The hosted and built-in sources contain the same packages, so adding both may sh
 | SSH | 0.2.0 | An SSH server for Spring. It stays stopped until you start it in its Settings page with a configured key. |
 | **Gravity** | 0.1.0 | Shake the phone and the Home icons fall as solid tiles. They tumble, pile up the way the phone is tilted and land on the dock. Grab and throw them, swipe to other pages (each page falls when you reach it), and tap a loose icon to open its app. Shake again or press Home and they float back into place. Labels hide while icons are loose. |
 | **Harlem Shake** | 0.1.2 | A remake of the 2013 meme tweak. Tap Do the Harlem Shake in its Settings page and Settings closes to Home: one icon dances alone, then at the drop every icon joins in with a random move until the song ends. The song isn't included. Tap the song row to pick an audio file of your own with the system file picker (a real macOS dialog on Mac.APK), or it dances in silence. |
+| **Android Keyboard** | 0.1.0 | Type into any text field with your real keyboard (on Mac.APK, or a keyboard connected to your phone), with Backspace, Return and ⌘V / Ctrl+V paste, and hide the iOS keyboard so apps get the whole screen. On a phone, turn on **Use the Android keyboard** to get your own keyboard (with suggestions) instead; that option is new and less tested. Pop-up boxes with a text field still use the iOS keyboard. |
 
 The full source of each package is in `sources/<name>/`.
 
