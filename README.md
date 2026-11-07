@@ -12,7 +12,7 @@ The hosted and built-in sources contain the same packages, so adding both may sh
 
 ## Packages
 
-Every package supports **Spring 0.8.1** and **Spring 0.9 Preview 1**; Ruby shows the versions each one supports and only installs it on those.
+Every package supports **Spring 0.8.1** and **Spring 0.9 Preview 1**; Ruby shows the versions each one supports and only installs it on those. Every package also works on [rootless installs](https://github.com/UltraFEmotes/WinterX/blob/main/docs/rootless-android.md); SSH keys and SnowyHome icon packs are imported with the file picker.
 
 | Package | Version | What it does |
 | --- | --- | --- |
@@ -21,8 +21,8 @@ Every package supports **Spring 0.8.1** and **Spring 0.9 Preview 1**; Ruby shows
 | DockIn | 0.2.2 | Choose four to seven dock icons. |
 | FreeMe | 0.2.1 | Keep gaps in the Home grid, move icons across pages and keep native folders. |
 | Message+ | 0.2.1 | Settings inside Messages and JPEG photo-quality choices. Video sending and reactions are unfinished. |
-| SnowyHome | 0.2.2 | Icon packs, badge colours, icon corners and hidden icon labels. When labels are hidden, Home icons move down to sit centred in their cells. |
-| SSH | 0.2.1 | An SSH server for Spring. It stays stopped until you start it in its Settings page with a configured key. |
+| SnowyHome | 0.2.3 | Icon packs, badge colours, icon corners and hidden icon labels. When labels are hidden, Home icons move down to sit centred in their cells. |
+| SSH | 0.2.2 | An SSH server for Spring. It stays stopped until you start it in its Settings page with a configured key. |
 | **Gravity** | 0.1.1 | Shake the phone and the Home icons fall as solid tiles. They tumble, pile up the way the phone is tilted and land on the dock. Grab and throw them, swipe to other pages (each page falls when you reach it), and tap a loose icon to open its app. Shake again or press Home and they float back into place. Labels hide while icons are loose. |
 | **Harlem Shake** | 0.1.3 | A remake of the 2013 meme tweak. Tap Do the Harlem Shake in its Settings page and Settings closes to Home: one icon dances alone, then at the drop every icon joins in with a random move until the song ends. The song isn't included. Tap the song row to pick an audio file of your own with the system file picker (a real macOS dialog on Mac.APK), or it dances in silence. |
 | **Android Keyboard** | 0.1.2 | Type into any text field with your real keyboard (on Mac.APK, or a keyboard connected to your phone), with Backspace, Return and ⌘V / Ctrl+V paste, and hide the iOS keyboard so apps get the whole screen. On a phone, turn on **Use the Android keyboard** to get your own keyboard (with suggestions) instead; that option is new and less tested. Pop-up boxes with a text field still use the iOS keyboard. |
